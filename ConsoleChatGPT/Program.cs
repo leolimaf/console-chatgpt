@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using Newtonsoft.Json;
 
+// CONSOLE UTILIZADO PARA TESTAR A API DO CHATGPT
 do
 {
     var input = Console.ReadLine();
