@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatGPT.API", "ConsoleChatGPT.API\ConsoleChatGPT.API.csproj", "{A3AF4B88-AFA0-4F6A-9297-093E72340469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatGPT.Service", "ConsoleChatGPT.Service\ConsoleChatGPT.Service.csproj", "{0A353E1B-0434-4399-A01C-CDEA8564836A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatGPT.Infrastructure", "ConsoleChatGPT.Infrastructure\ConsoleChatGPT.Infrastructure.csproj", "{9844303E-2302-4A0E-A719-DFDF670057D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleChatGPT", "ConsoleChatGPT\ConsoleChatGPT.csproj", "{8852D27E-63C3-49B6-B37D-F4AE80D99741}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3AF4B88-AFA0-4F6A-9297-093E72340469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AF4B88-AFA0-4F6A-9297-093E72340469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AF4B88-AFA0-4F6A-9297-093E72340469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AF4B88-AFA0-4F6A-9297-093E72340469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A353E1B-0434-4399-A01C-CDEA8564836A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A353E1B-0434-4399-A01C-CDEA8564836A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A353E1B-0434-4399-A01C-CDEA8564836A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A353E1B-0434-4399-A01C-CDEA8564836A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9844303E-2302-4A0E-A719-DFDF670057D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9844303E-2302-4A0E-A719-DFDF670057D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9844303E-2302-4A0E-A719-DFDF670057D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9844303E-2302-4A0E-A719-DFDF670057D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8852D27E-63C3-49B6-B37D-F4AE80D99741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8852D27E-63C3-49B6-B37D-F4AE80D99741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8852D27E-63C3-49B6-B37D-F4AE80D99741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8852D27E-63C3-49B6-B37D-F4AE80D99741}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
