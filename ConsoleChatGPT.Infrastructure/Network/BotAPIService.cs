@@ -19,27 +19,20 @@ public class BotAPIService : IBotAPIService
         var apiKey = _configuration.GetSection("Appsettings:ChatGPTAPIKEY").Value;
         var apiModel = _configuration.GetSection("Appsettings:Model").Value;
         
-        List<string> rq = new List<string>();
-        string rs = string.Empty;
         OpenAIAPI api = new OpenAIAPI(new APIAuthentication(apiKey));
         
-        var completionRequest = new OpenAI_API.Completions.CompletionRequest()
+        var completionRequest = new OpenAI_API.Completions.CompletionRequest
         {
             Prompt = request.Mensagem,
             Model = apiModel,
             Temperature = 0.5,
-            MaxTokens = 500,
+            MaxTokens = 100,
             TopP = 1.0,
             FrequencyPenalty = 0.0,
             PresencePenalty = 0.0,
 
         };
         var result = await api.Completions.CreateCompletionsAsync(completionRequest);
-        foreach (var choice in result.Completions)
-        {
-            rs = choice.Text;
-            rq.Add(choice.Text);
-        }
-        return rq;
+        return result.Completions.Select(choice => choice.Text).ToList();
     }
 }
