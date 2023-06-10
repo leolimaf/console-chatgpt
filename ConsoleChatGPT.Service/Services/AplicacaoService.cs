@@ -3,7 +3,7 @@ using ConsoleChatGPT.Service.Models;
 
 namespace ConsoleChatGPT.Service.Services;
 
-public class AplicacaoService : IAplicacaoService
+public class AplicacaoService : IAplicacaoService, IWhatsAppMensagensDeEntradaService
 {
     private readonly IBotAPIService _botAPIService;
 
@@ -27,5 +27,11 @@ public class AplicacaoService : IAplicacaoService
             Sucesso = true,
             Conteudo = conteudoGerado
         };
+    }
+
+    public async Task<string> GerarConteudoViaWhatsApp(Request request)
+    {
+        var response = await GerarConteudo(request);
+        return response.Conteudo[2];
     }
 }

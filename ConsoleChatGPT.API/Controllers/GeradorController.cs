@@ -17,9 +17,7 @@ public class GeradorController : ControllerBase
         _aplicacao = aplicacao;
     }
     
-    /// <summary>
-    /// Envia uma mensagem para a API do ChatGPT
-    /// </summary>
+    /// <summary> Envia uma mensagem para a API do ChatGPT </summary>
     /// <returns>Coleção de respostas e atributo booleano incicando se a requisição foi bem-sucedida</returns>
     /// <remarks>
     /// Exemplo de requisição:

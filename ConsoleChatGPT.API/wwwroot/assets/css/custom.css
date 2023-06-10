@@ -1,8 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-head title::before {
-    content: "Novo Título" !important;
-}
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 
 body {
     background: #f5f5f5;;
@@ -28,15 +24,14 @@ body {
     content: "OpenAI ";
     padding-left: 38px;
     font-weight: normal;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
     color: #f5f5f5;
 }
 
 h2,
 h3 {
     color: #171717 !important;
-    font-size: 33px !important;
-    font-family: 'Lato', sans-serif !important;
+    font-size: 34px !important;
 }
 
 .opblock-summary-post > button > span.opblock-summary-method {

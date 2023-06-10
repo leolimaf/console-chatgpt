@@ -9,6 +9,8 @@
 
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="Twilio.AspNet.Common" Version="8.0.2" />
+      <PackageReference Include="Twilio.AspNet.Core" Version="8.0.2" />
     </ItemGroup>
 
 </Project>
