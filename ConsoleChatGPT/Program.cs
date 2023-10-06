@@ -12,7 +12,7 @@ do
     {
         var client = new HttpClient();
         client.DefaultRequestHeaders.Add("authorization",
-            "Bearer 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");
+            "Bearer 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");
 
         var body = JsonConvert.SerializeObject(new
         {
@@ -22,13 +22,21 @@ do
             temperature = 0
         });
 
-        var httpResponse = await client.PostAsync("https://api.openai.com/v1/completions",
-            new StringContent(body, Encoding.UTF8, "application/json"));
+        try
+        {
+            var httpResponse = await client.PostAsync("https://api.openai.com/v1/completions",
+                new StringContent(body, Encoding.UTF8, "application/json"));
 
-        var data = await httpResponse.Content.ReadAsStringAsync();
+            var data = await httpResponse.Content.ReadAsStringAsync();
 
-        var response = JsonConvert.DeserializeObject<dynamic>(data);
-        Console.WriteLine(response?.choices[0].text);
-        Console.WriteLine();
+            var response = JsonConvert.DeserializeObject<dynamic>(data);
+            Console.WriteLine(response?.choices[0].text);
+            Console.WriteLine();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            break;
+        }
     }
 } while (true);
