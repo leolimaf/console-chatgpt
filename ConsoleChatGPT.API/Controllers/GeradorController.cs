@@ -18,12 +18,12 @@ public class GeradorController : ControllerBase
     }
     
     /// <summary> Envia uma mensagem para a API do ChatGPT </summary>
-    /// <returns>Coleção de respostas e atributo booleano incicando se a requisição foi bem-sucedida</returns>
+    /// <returns>Coleção de respostas e atributo booleano indicando se a requisição foi bem-sucedida</returns>
     /// <remarks>
     /// Exemplo de requisição:
     ///
     ///     {
-    ///        "mensagem": "Quem veio primeiro, o ovo ou a galinha?"
+    ///        "mensagem": "Quem foi Alan Turing?"
     ///     }
     ///
     /// </remarks>

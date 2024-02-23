@@ -1,7 +1,9 @@
 using System.Reflection;
+using ConsoleChatGPT.Application;
 using ConsoleChatGPT.Infrastructure.Network;
 using ConsoleChatGPT.Application.Interfaces;
 using ConsoleChatGPT.Application.Services;
+using ConsoleChatGPT.Infrastructure;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,9 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<IAplicacaoService, AplicacaoService>();
-builder.Services.AddScoped<IWhatsAppMensagensDeEntradaService, AplicacaoService>();
-builder.Services.AddScoped<IBotAPIService, BotAPIService>();
+builder.Services.AddApplication().AddInfrastructure(builder.Configuration);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

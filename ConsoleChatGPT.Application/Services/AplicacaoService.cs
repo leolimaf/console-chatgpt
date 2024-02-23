@@ -5,11 +5,11 @@ namespace ConsoleChatGPT.Application.Services;
 
 public class AplicacaoService : IAplicacaoService, IWhatsAppMensagensDeEntradaService
 {
-    private readonly IBotAPIService _botAPIService;
+    private readonly IChatGptAPIService _chatGptApiService;
 
-    public AplicacaoService(IBotAPIService botAPIService)
+    public AplicacaoService(IChatGptAPIService chatGptApiService)
     {
-        _botAPIService = botAPIService;
+        _chatGptApiService = chatGptApiService;
     }
     
     public async Task<Response> GerarConteudo(Request request)
@@ -17,9 +17,9 @@ public class AplicacaoService : IAplicacaoService, IWhatsAppMensagensDeEntradaSe
         if(string.IsNullOrWhiteSpace(request.Mensagem))
             return new Response();
         
-        var conteudoGerado = await _botAPIService.GerarConteudo(request);
+        var conteudoGerado = await _chatGptApiService.GerarConteudo(request);
 
-        if (conteudoGerado.Count == 0)
+        if (string.IsNullOrWhiteSpace(conteudoGerado))
             return new Response();
         
         return new Response
@@ -31,7 +31,6 @@ public class AplicacaoService : IAplicacaoService, IWhatsAppMensagensDeEntradaSe
 
     public async Task<string> GerarConteudoViaWhatsApp(Request request)
     {
-        var response = await GerarConteudo(request);
-        return response.Conteudo[2];
+        return (await GerarConteudo(request)).Conteudo;
     }
 }

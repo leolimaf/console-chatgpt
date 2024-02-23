@@ -2,7 +2,7 @@ using ConsoleChatGPT.Domain.Models;
 
 namespace ConsoleChatGPT.Application.Interfaces;
 
-public interface IBotAPIService
+public interface IChatGptAPIService
 {
-    Task<List<string>> GerarConteudo(Request request);
+    Task<string> GerarConteudo(Request request);
 }
