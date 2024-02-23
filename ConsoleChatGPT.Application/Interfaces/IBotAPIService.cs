@@ -1,6 +1,6 @@
-using ConsoleChatGPT.Service.Models;
+using ConsoleChatGPT.Domain.Models;
 
-namespace ConsoleChatGPT.Service.Interfaces;
+namespace ConsoleChatGPT.Application.Interfaces;
 
 public interface IBotAPIService
 {

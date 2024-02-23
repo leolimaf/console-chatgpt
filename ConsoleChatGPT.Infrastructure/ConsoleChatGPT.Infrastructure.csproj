@@ -13,7 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ConsoleChatGPT.Service\ConsoleChatGPT.Service.csproj" />
+      <ProjectReference Include="..\ConsoleChatGPT.Application\ConsoleChatGPT.Application.csproj" />
+      <ProjectReference Include="..\ConsoleChatGPT.Domain\ConsoleChatGPT.Domain.csproj" />
     </ItemGroup>
 
 </Project>

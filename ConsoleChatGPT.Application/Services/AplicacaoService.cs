@@ -1,7 +1,7 @@
-using ConsoleChatGPT.Service.Interfaces;
-using ConsoleChatGPT.Service.Models;
+using ConsoleChatGPT.Application.Interfaces;
+using ConsoleChatGPT.Domain.Models;
 
-namespace ConsoleChatGPT.Service.Services;
+namespace ConsoleChatGPT.Application.Services;
 
 public class AplicacaoService : IAplicacaoService, IWhatsAppMensagensDeEntradaService
 {

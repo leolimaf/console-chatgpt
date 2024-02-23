@@ -1,5 +1,5 @@
-using ConsoleChatGPT.Service.Interfaces;
-using ConsoleChatGPT.Service.Models;
+using ConsoleChatGPT.Application.Interfaces;
+using ConsoleChatGPT.Domain.Models;
 using Microsoft.Extensions.Configuration;
 using OpenAI_API;
 

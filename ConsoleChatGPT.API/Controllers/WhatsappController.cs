@@ -1,6 +1,6 @@
 ﻿using System.Security.Authentication;
-using ConsoleChatGPT.Service.Interfaces;
-using ConsoleChatGPT.Service.Models;
+using ConsoleChatGPT.Application.Interfaces;
+using ConsoleChatGPT.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Twilio.AspNet.Core;
 using Twilio.TwiML;

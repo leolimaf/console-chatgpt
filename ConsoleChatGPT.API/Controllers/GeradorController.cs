@@ -1,6 +1,6 @@
 using System.Security.Authentication;
-using ConsoleChatGPT.Service.Interfaces;
-using ConsoleChatGPT.Service.Models;
+using ConsoleChatGPT.Application.Interfaces;
+using ConsoleChatGPT.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ConsoleChatGPT.API.Controllers;
@@ -23,7 +23,7 @@ public class GeradorController : ControllerBase
     /// Exemplo de requisição:
     ///
     ///     {
-    ///        "mensagem": "Um avião contém 4 passageiros romanos e uma aeromoça inglesa. Qual é o nome da aeromoça?"
+    ///        "mensagem": "Quem veio primeiro, o ovo ou a galinha?"
     ///     }
     ///
     /// </remarks>

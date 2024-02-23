@@ -1,7 +1,7 @@
 using System.Reflection;
 using ConsoleChatGPT.Infrastructure.Network;
-using ConsoleChatGPT.Service.Interfaces;
-using ConsoleChatGPT.Service.Services;
+using ConsoleChatGPT.Application.Interfaces;
+using ConsoleChatGPT.Application.Services;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);

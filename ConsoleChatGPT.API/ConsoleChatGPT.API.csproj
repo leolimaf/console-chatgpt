@@ -18,7 +18,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ConsoleChatGPT.Infrastructure\ConsoleChatGPT.Infrastructure.csproj" />
-      <ProjectReference Include="..\ConsoleChatGPT.Service\ConsoleChatGPT.Service.csproj" />
+      <ProjectReference Include="..\ConsoleChatGPT.Application\ConsoleChatGPT.Application.csproj" />
     </ItemGroup>
 
 </Project>

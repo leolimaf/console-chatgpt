@@ -1,4 +1,4 @@
-namespace ConsoleChatGPT.Service.Models;
+namespace ConsoleChatGPT.Domain.Models;
 
 public class Response
 {
